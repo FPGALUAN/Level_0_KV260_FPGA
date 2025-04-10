@@ -70,35 +70,7 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 </p>
 ---
 
-1. ✅ **Xác định yêu cầu và đặc tả hệ thống**  
-   → Vẽ sơ đồ khối, xác định tín hiệu vào/ra, chức năng cần thiết kế.
 
-2. ✅ **Mô tả phần cứng bằng Verilog HDL và mô phỏng chức năng**  
-   → Thiết kế mạch số đồng bộ và kiểm thử trên **Vivado Simulator**.
-
-3. ✅ **Đóng gói IP (Package IP) trong Vivado**  
-   → Thêm giao tiếp AXI4-Full để tích hợp vào hệ thống SoC.
-
-4. ✅ **Tạo Block Design cho hệ thống SoC trên Vivado**  
-   → Kết nối Zynq MPSoC và IP tự thiết kế thông qua AXI bus.
-
-5. ✅ **Tổng hợp (Synthesis), Place & Route, và tạo file Bitstream**  
-   → Xuất các file `.bit` và `.xsa` dùng cho phần mềm và PetaLinux.
-
-6. ✅ **Thiết lập môi trường PetaLinux và tạo driver**  
-   → Tạo project, cấu hình device tree, thêm UIO driver cho IP.
-
-7. ✅ **Tạo image khởi động và rootfs cho Linux trên FPGA**  
-   → Build các thành phần BOOT.BIN, kernel image và root filesystem.
-
-8. ✅ **Phát triển phần mềm nhúng (Embedded C/C++)**  
-   → Viết ứng dụng C để điều khiển IP thông qua giao tiếp PIO từ userspace.
-
----
-
-📌 Mỗi bước trên sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video để xem chi tiết từng bước 👇👇👇.  
- 
-[![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
 
 ---
 
@@ -155,6 +127,11 @@ Các thành phần chính trong sơ đồ Block Design:
 ✅ Sau khi kết nối đầy đủ, hệ thống có thể tổng hợp (synthesis) để tạo file bitstream.
 
 ![Hình 6 - Block Design SoC](Hinh/Hinh_6.png)
+# IV. Video hướng dẫn chi tiết
+
+Mỗi bước trên sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video để xem chi tiết từng bước 👇👇👇.  
+ 
+[![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
 
 # 📬 Mọi góp ý hoặc liên hệ:
 
