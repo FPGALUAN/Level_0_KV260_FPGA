@@ -1,0 +1,10 @@
+/include/ "system-conf.dtsi"
+/ {
+
+    amba_pl@0 {
+        MY_IP@a0000000 {
+                compatible = "generic-uio";
+        };
+    };
+	
+};
