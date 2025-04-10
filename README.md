@@ -86,7 +86,7 @@ Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC 
 
 ### 🧩 Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
 
-- Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số fixed point **Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
+- Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số **fixed point Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
 - Xây dựng sơ đồ khối gồm các khối nhân, cộng, thanh ghi và điều khiển bởi **FSM (Finite State Machine)**.
 - FSM gồm 3 trạng thái: `IDLE`, `EXECUTE`, `WAIT_DONE`, điều khiển thông qua tín hiệu `Start_in` và `Done_in`.
 
@@ -95,3 +95,11 @@ Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC 
 
 ![Sơ đồ khối](Hinh/Hinh_2.png)
 
+### ⚙️ Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
+
+- Viết mã Verilog mô tả mạch số thực hiện phép tính `Y = A × X + B` với chuẩn **fixed-point Q15.16**.
+- Thiết kế bao gồm mạch tổ hợp (nhân, cộng) và điều khiển bởi **FSM** có 3 trạng thái: `IDLE`, `EXECUTE`, `WAIT_DONE`.
+- Viết testbench mô phỏng 10 test case với các giá trị thực và kiểm tra đầu ra `Y_out`.
+- Chạy mô phỏng bằng **Vivado Simulator**, quan sát tín hiệu trên waveform và kết quả kiểm tra được in ở cửa sổ console.
+
+![Mô phỏng trên Vivado](Hinh/Hinh_3.png)
