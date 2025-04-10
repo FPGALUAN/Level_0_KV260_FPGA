@@ -4,6 +4,14 @@ Chào mừng bạn đến với **Level 0** trong series **Thiết kế phần c
 Repository này chứa toàn bộ tài liệu, mã nguồn và hướng dẫn liên quan đến việc hiện thực một mô-đun phần cứng đơn giản và tích hợp vào hệ thống SoC trên bo mạch **Xilinx Kria KV260**.
 
 ---
+# Video hướng dẫn chi tiết
+
+Mỗi bước trên sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video bên dưới để xem chi tiết từng bước 👇👇👇.  
+ 
+[![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
+
+Hoặc truy cập link: https://youtu.be/F1vxzkd7_DI?si=RyHPx3zzii_RXPgk
+---
 
 ## I. Yêu cầu thuật toán
 
@@ -147,13 +155,8 @@ Các thành phần chính trong sơ đồ Block Design:
 
 Đang soạn nội dung.....
 
-# IV. Video hướng dẫn chi tiết
+---
 
-Mỗi bước trên sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video bên dưới để xem chi tiết từng bước 👇👇👇.  
- 
-[![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
-
-Hoặc truy cập link: https://youtu.be/F1vxzkd7_DI?si=RyHPx3zzii_RXPgk
 # 📬 Mọi góp ý hoặc liên hệ:
 
 - Facebook: [https://www.facebook.com/pham.luan.921/](https://www.facebook.com/pham.luan.921/)
