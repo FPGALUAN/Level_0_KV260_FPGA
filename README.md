@@ -94,7 +94,7 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 - Server PC và Laptop cần nằm chung mạng nội bộ (LAN/WiFi).
 - Thẻ nhớ microSD sẽ được dùng để nạp hệ điều hành Linux vào FPGA.
 
-![Kết nối thiết bị](Hinh/Hinh_4.png)
+![Kết nối thiết bị](Hinh/Hinh_2.png)
 
 ---
 
