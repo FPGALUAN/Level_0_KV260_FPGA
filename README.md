@@ -122,6 +122,24 @@ Các thành phần chính trong sơ đồ Block Design:
 ✅ Sau khi kết nối đầy đủ, hệ thống có thể tổng hợp (synthesis) để tạo file bitstream.
 
 ![Hình 6 - Block Design SoC](Hinh/Hinh_6.png)
+
+### E. Bước 5: Tổng hợp (Synthesis), Place & Route, và tạo file Bitstream
+
+Đang soạn nội dung.....
+
+### F. Bước 6: Thiết lập môi trường PetaLinux và tạo driver
+
+Đang soạn nội dung.....
+
+### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
+
+Đang soạn nội dung.....
+
+### G. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
+
+
+Đang soạn nội dung.....
+
 # IV. Video hướng dẫn chi tiết
 
 Mỗi bước trên sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video bên dưới để xem chi tiết từng bước 👇👇👇.  
