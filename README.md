@@ -82,6 +82,22 @@ Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC 
 
 ---
 
+## 🧰 Chuẩn bị và kết nối thiết bị
+
+Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết nối và thiết lập các thiết bị như sau:
+
+- **KV260 FPGA**: kết nối với router qua **dây mạng** để có internet, và kết nối với Server PC qua **dây JTAG** để nạp bitstream, debug.
+- **Server PC**: dùng để cài **Vivado** và **Petalinux**, kết nối mạng và đầu đọc thẻ nhớ để chuẩn bị Linux cho FPGA.
+- **Laptop**: sử dụng để điều khiển Server PC và KV260 thông qua **kết nối SSH** (qua MobaXterm, VSCode, hoặc Terminal).
+
+⚠️ **Lưu ý**:  
+- Server PC và Laptop cần nằm chung mạng nội bộ (LAN/WiFi).
+- Thẻ nhớ microSD sẽ được dùng để nạp hệ điều hành Linux vào FPGA.
+
+![Kết nối thiết bị](Hinh/Hinh_4.png)
+
+---
+
 ## 🔍 Chi tiết từng bước trong quy trình thiết kế
 
 ### 🧩 Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
@@ -93,7 +109,7 @@ Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC 
 📌 Tín hiệu chính:  
 `A_in`, `X_in`, `B_in` (đầu vào), `Y_out`, `Valid_out` (đầu ra), `Start_in`, `Done_in` (điều khiển)
 
-![Sơ đồ khối](Hinh/Hinh_2.png)
+![Sơ đồ khối](Hinh/Hinh_3.png)
 
 ### ⚙️ Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
 
@@ -102,4 +118,4 @@ Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC 
 - Viết testbench mô phỏng 10 test case với các giá trị thực và kiểm tra đầu ra `Y_out`.
 - Chạy mô phỏng bằng **Vivado Simulator**, quan sát tín hiệu trên waveform và kết quả kiểm tra được in ở cửa sổ console.
 
-![Mô phỏng trên Vivado](Hinh/Hinh_3.png)
+![Mô phỏng trên Vivado](Hinh/Hinh_4.png)
