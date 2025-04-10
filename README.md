@@ -5,7 +5,7 @@ Repository này chứa toàn bộ tài liệu, mã nguồn và hướng dẫn li
 
 ---
 
-## 📘 Giới thiệu
+## I. Yêu cầu thuật toán
 
 Trong Level 0 này, chúng ta sẽ hiện thực hàm toán học cơ bản:
 
