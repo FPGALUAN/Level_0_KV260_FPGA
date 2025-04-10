@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/RTL/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiply_Accumulate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/TB/TB_MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/Simulation/Simulation.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

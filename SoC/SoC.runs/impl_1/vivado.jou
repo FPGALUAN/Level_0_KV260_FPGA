@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Thu Apr 10 15:22:02 2025
+# Process ID: 2471635
+# Current directory: /home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/SoC/SoC.runs/impl_1
+# Command line: vivado -log SoC_wrapper.vdi -applog -stack 10000 -product Vivado -messageDb vivado.pb -mode batch -source SoC_wrapper.tcl -notrace
+# Log file: /home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/SoC/SoC.runs/impl_1/SoC_wrapper.vdi
+# Journal file: /home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/SoC/SoC.runs/impl_1/vivado.jou
+# Running On: cad115, OS: Linux, CPU Frequency: 1199.789 MHz, CPU Physical cores: 14, Host memory: 269918 MB
+#-----------------------------------------------------------
+source SoC_wrapper.tcl -notrace

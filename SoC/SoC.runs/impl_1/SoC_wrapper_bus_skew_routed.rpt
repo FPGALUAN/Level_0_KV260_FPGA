@@ -1,0 +1,16 @@
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date              : Thu Apr 10 15:25:59 2025
+| Host              : cad115 running 64-bit Ubuntu 22.04.5 LTS
+| Command           : report_bus_skew -warn_on_violation -file SoC_wrapper_bus_skew_routed.rpt -pb SoC_wrapper_bus_skew_routed.pb -rpx SoC_wrapper_bus_skew_routed.rpx
+| Design            : SoC_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

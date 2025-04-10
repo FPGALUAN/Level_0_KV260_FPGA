@@ -1,0 +1,7 @@
+Running: xsim.dir/TB_MAC_behav/xsimk -simmode gui -wdb TB_MAC_behav.wdb -simrunnum 0 -socket 60937
+Design successfully loaded
+Design Loading Memory Usage: 29148 KB (Peak: 29640 KB)
+Design Loading CPU Usage: 90 ms
+Simulation completed
+Simulation Memory Usage: 107048 KB (Peak: 260224 KB)
+Simulation CPU Usage: 100 ms

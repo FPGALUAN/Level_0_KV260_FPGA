@@ -1,0 +1,16 @@
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_MAC_behav xil_defaultlib.TB_MAC xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/RTL/MAC.v" Line 17. Module Multiply_Accumulate doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/hoailuan/Phat_Trien_Phan_Cung_FPGA/Kria_KV260_FPGA/Level_0/RTL/MAC.v" Line 17. Module Multiply_Accumulate doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Multiply_Accumulate
+Compiling module xil_defaultlib.TB_MAC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_MAC_behav
