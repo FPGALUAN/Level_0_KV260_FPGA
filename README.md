@@ -1,4 +1,4 @@
 # Level_0
  
-[![Watch the video](https://www.youtube.com/embed/F1vxzkd7_DI?si=3-jHSbo8-WkBEBXB)
+[![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
 
