@@ -68,17 +68,12 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 <p align="center">
   <img src="Hinh/Hinh_2.png" alt="Kết nối thiết bị" width="600"/>
 </p>
----
-
-
 
 ---
 
+## III. Chi tiết từng bước trong quy trình thiết kế
 
-
-## 🔍 Chi tiết từng bước trong quy trình thiết kế
-
-### ⚙️ Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
+### A. Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
 
 - Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số **fixed point Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
 - Xây dựng sơ đồ khối gồm các khối nhân, cộng, thanh ghi và điều khiển bởi **FSM (Finite State Machine)**.
@@ -89,7 +84,7 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 
 ![Sơ đồ khối](Hinh/Hinh_3.png)
 
-### ⚙️ Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
+### B. Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
 
 - Viết mã Verilog mô tả mạch số thực hiện phép tính `Y = A × X + B` với chuẩn **fixed-point Q15.16**.
 - Thiết kế bao gồm mạch tổ hợp (nhân, cộng) và điều khiển bởi **FSM** có 3 trạng thái: `IDLE`, `EXECUTE`, `WAIT_DONE`.
@@ -98,7 +93,7 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 
 ![Mô phỏng trên Vivado](Hinh/Hinh_4.png)
 
-### ⚙️ Bước 3: Đóng gói IP (Package IP) trong Vivado
+### C. Bước 3: Đóng gói IP (Package IP) trong Vivado
 
 Sau khi mô tả phần cứng bằng Verilog HDL và mô phỏng thành công, chúng ta tiến hành **đóng gói thiết kế thành một IP** để có thể tích hợp vào hệ thống SoC sau này.
 
@@ -113,7 +108,7 @@ Các bước thực hiện:
 
 ![Hình 5 - Giao diện đóng gói IP](Hinh/Hinh_5.png)
 
-### ⚙️ Bước 4: Tạo Block Design cho hệ thống SoC trên Vivado
+### D. Bước 4: Tạo Block Design cho hệ thống SoC trên Vivado
 
 Sau khi đóng gói IP thành công, ta tiến hành tạo hệ thống SoC bằng cách sử dụng **Block Design** trong Vivado.
 
