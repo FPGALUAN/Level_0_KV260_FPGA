@@ -55,9 +55,7 @@ Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị 
 📌 **Lưu ý:**  
 Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC duy nhất**, miễn là máy có cài đặt Linux để cài PetaLinux.
 
----
-
-## 🧰 Chuẩn bị và kết nối thiết bị
+### 🧰 Chuẩn bị và kết nối thiết bị
 
 Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết nối và thiết lập các thiết bị như sau:
 
