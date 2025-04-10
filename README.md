@@ -119,3 +119,18 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 - Chạy mô phỏng bằng **Vivado Simulator**, quan sát tín hiệu trên waveform và kết quả kiểm tra được in ở cửa sổ console.
 
 ![Mô phỏng trên Vivado](Hinh/Hinh_4.png)
+
+### ⚙️ Bước 3: Đóng gói IP (Package IP) trong Vivado
+
+Sau khi mô tả phần cứng bằng Verilog HDL và mô phỏng thành công, chúng ta tiến hành **đóng gói thiết kế thành một IP** để có thể tích hợp vào hệ thống SoC sau này.
+
+Các bước thực hiện:
+
+- Mở Vivado và chọn chức năng **Package IP**
+- Điền thông tin định danh cho IP như tên, phiên bản, mô tả
+- Cấu hình các cổng I/O, địa chỉ, giao tiếp AXI nếu có
+- Xác nhận và đóng gói IP bằng cách nhấn **Package IP**
+
+> Đây là bước cần thiết để có thể sử dụng lại IP trong các Block Design.
+
+![Hình 5 - Giao diện đóng gói IP](Hinh/Hinh_5.png)
