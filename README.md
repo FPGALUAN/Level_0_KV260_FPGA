@@ -133,6 +133,7 @@ Mỗi bước trên sẽ được trình bày chi tiết trong video hướng d�
  
 [![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
 
+Hoặc truy cập link: https://youtu.be/F1vxzkd7_DI?si=RyHPx3zzii_RXPgk
 # 📬 Mọi góp ý hoặc liên hệ:
 
 - Facebook: [https://www.facebook.com/pham.luan.921/](https://www.facebook.com/pham.luan.921/)
