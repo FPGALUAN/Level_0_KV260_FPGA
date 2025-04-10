@@ -73,6 +73,10 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 
 ## III. Chi tiết từng bước trong quy trình thiết kế
 
+<p align="center">
+  <img src="Hinh/Hinh_Quy_Trinh.png" alt="Quy trình thiết kế" width="600"/>
+</p>
+
 ### A. Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
 
 - Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số **fixed point Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
@@ -136,7 +140,6 @@ Các thành phần chính trong sơ đồ Block Design:
 Đang soạn nội dung.....
 
 ### G. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
-
 
 Đang soạn nội dung.....
 
