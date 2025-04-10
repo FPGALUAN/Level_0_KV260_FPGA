@@ -80,14 +80,18 @@ Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị 
 📌 **Lưu ý:**  
 Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC duy nhất**, miễn là máy có cài đặt Linux để cài PetaLinux.
 
+---
 
 ## 🔍 Chi tiết từng bước trong quy trình thiết kế
 
 ### 🧩 Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
 
-- Xác định chức năng chính cần hiện thực: `Y = A * X + B`
-- Vẽ sơ đồ khối mô tả dòng dữ liệu và tín hiệu điều khiển: `A_in`, `X_in`, `B_in`, `Y_out`, `Valid_out`, `Start_in`, `Done_in`
-- Xác định định dạng số: sử dụng chuẩn **fixed-point Q15.16**
+- Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số fixed point **Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
+- Xây dựng sơ đồ khối gồm các khối nhân, cộng, thanh ghi và điều khiển bởi **FSM (Finite State Machine)**.
+- FSM gồm 3 trạng thái: `IDLE`, `EXECUTE`, `WAIT_DONE`, điều khiển thông qua tín hiệu `Start_in` và `Done_in`.
 
-🖼️ *Hình minh họa sơ đồ khối:*  
+📌 Tín hiệu chính:  
+`A_in`, `X_in`, `B_in` (đầu vào), `Y_out`, `Valid_out` (đầu ra), `Start_in`, `Done_in` (điều khiển)
+
+![Sơ đồ khối](Hinh/Hinh_2.png)
 
