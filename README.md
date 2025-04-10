@@ -65,7 +65,7 @@ Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị 
   → Dùng để kết nối FPGA với Internet thông qua router/switch, hỗ trợ cập nhật và debug qua SSH.
 
 - **Dây JTAG**  
-  → Kết nối từ FPGA đến Server PC để nạp bitstream, debug hoặc lập trình flash.
+  → Kết nối từ FPGA đến Server PC để nạp bitstream, debug hoặc hoạt động như dây UART để hiện thị console của Linux trên FPGA.
 
 - **Thẻ nhớ MicroSD và đầu đọc thẻ**  
   → Dùng để tạo image khởi động (BOOT.BIN + Linux kernel + rootfs) và cài hệ điều hành cho FPGA.
@@ -78,7 +78,7 @@ Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị 
   → Nếu dùng Windows, cần cài **VMware** để chạy Linux.
 
 📌 **Lưu ý:**  
-Bạn có thể thay thế **Server PC và Laptop** cho nhau, miễn là máy đủ mạnh và có thể cài đặt Vivado + PetaLinux.
+Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC duy nhất**, miễn là máy có cài đặt Linux để cài PetaLinux.
 
 
 ## 🔍 Chi tiết từng bước trong quy trình thiết kế
