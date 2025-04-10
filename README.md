@@ -77,6 +77,10 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
   <img src="Hinh/Hinh_Quy_Trinh.png" alt="Quy trình thiết kế" width="600"/>
 </p>
 
+Quy trình thiết kế hệ thống SoC trên FPGA gồm 8 bước tuần tự, bắt đầu từ việc xác định yêu cầu và mô tả phần cứng bằng Verilog, đến đóng gói IP, thiết kế hệ thống trên Vivado, thiết lập PetaLinux, và cuối cùng là phát triển phần mềm nhúng để điều khiển phần cứng đã thiết kế.
+
+Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
+
 ### A. Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
 
 - Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số **fixed point Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
