@@ -142,10 +142,18 @@ Sau khi đóng gói IP thành công, ta tiến hành tạo hệ thống SoC bằ
 Các thành phần chính trong sơ đồ Block Design:
 
 - **ZYNQ MPSoC**: bộ xử lý chính điều khiển hệ thống, cấu hình chân và kết nối AXI.
-- **IP tự thiết kế (MY_IP_v1_0)**: chứa hàm MAC `Y = A * X + B`, được kết nối thông qua chuẩn **AXI4-Lite**.
+- **IP tự thiết kế (MY_IP_v1_0)**: chứa hàm MAC `Y = A * X + B`, được kết nối thông qua chuẩn **AXI4-Full**.
 - **AXI SmartConnect**: cầu nối giữa các master/slave sử dụng giao thức AXI.
 - **Reset module**: đồng bộ hóa tín hiệu reset giữa phần xử lý và phần lập trình.
 
 ✅ Sau khi kết nối đầy đủ, hệ thống có thể tổng hợp (synthesis) để tạo file bitstream.
 
 ![Hình 6 - Block Design SoC](Hinh/Hinh_6.png)
+
+# 📬 Mọi góp ý hoặc liên hệ:
+
+- Facebook: [https://www.facebook.com/pham.luan.921/](https://www.facebook.com/pham.luan.921/)
+- Email: [luanph@uit.edu.vn](mailto:luanph@uit.edu.vn)
+
+Rất cảm ơn sự đồng hành và ủng hộ của bạn 🙏  
+**Chúc bạn học FPGA thật vui và hiệu quả!**
