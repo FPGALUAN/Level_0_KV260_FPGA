@@ -54,7 +54,7 @@ Bài học được thiết kế cho những người mới bắt đầu với p
 
 Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị để thực hành Level 0 trên bo mạch **Kria KV260 FPGA**.
 
-🖼️ ![Thiết bị cần thiết](Hinh/Hinh_1.png)
+![Thiết bị cần thiết](Hinh/Hinh_1.png)
 
 ### 📦 Danh sách thiết bị:
 
