@@ -166,5 +166,5 @@ Chỉ cần bạn học tốt, hiểu bài và lan tỏa kiến thức đến nh
 ---
 
 <p align="center">
-  <img src="Hinh/Bank.png" alt="Tài Khoản Ngân Hàng" width="300"/>
+  <img src="Hinh/Bank.png" alt="Tài Khoản Ngân Hàng" width="200"/>
 </p>
