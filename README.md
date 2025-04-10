@@ -66,7 +66,7 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 - Thẻ nhớ microSD sẽ được dùng để nạp hệ điều hành Linux vào FPGA.
 
 <p align="center">
-  <img src="Hinh/Hinh_2.png" alt="Kết nối thiết bị" width="700"/>
+  <img src="Hinh/Hinh_2.png" alt="Kết nối thiết bị" width="600"/>
 </p>
 ---
 
