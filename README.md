@@ -52,7 +52,7 @@ Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị 
   → Dùng để kết nối SSH đến Server, hoặc truyền file (WinSCP).  
   → Nếu dùng Windows, cần cài **VMware** để chạy Linux.
 
-📌 **Lưu ý:**  
+⚠️ **Lưu ý:**  
 Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC duy nhất**, miễn là máy có cài đặt Linux để cài PetaLinux.
 
 ### 🧰 Chuẩn bị và kết nối thiết bị
