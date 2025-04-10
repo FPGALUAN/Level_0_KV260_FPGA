@@ -143,7 +143,7 @@ Các thành phần chính trong sơ đồ Block Design:
 
 Đang soạn nội dung.....
 
-### G. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
+### H. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
 
 Đang soạn nội dung.....
 
