@@ -100,7 +100,7 @@ Trước khi bắt đầu quy trình thiết kế phần cứng, cần kết n�
 
 ## 🔍 Chi tiết từng bước trong quy trình thiết kế
 
-### 🧩 Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
+### ⚙️ Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
 
 - Hàm cần hiện thực: **Y = A × X + B**, dùng chuẩn số **fixed point Q15.16** ( 1 bit dấu, 15 bit số nguyên, 16 bit thập phân).
 - Xây dựng sơ đồ khối gồm các khối nhân, cộng, thanh ghi và điều khiển bởi **FSM (Finite State Machine)**.
@@ -135,7 +135,7 @@ Các bước thực hiện:
 
 ![Hình 5 - Giao diện đóng gói IP](Hinh/Hinh_5.png)
 
-## 🧱 Bước 4: Tạo Block Design cho hệ thống SoC trên Vivado
+### ⚙️ Bước 4: Tạo Block Design cho hệ thống SoC trên Vivado
 
 Sau khi đóng gói IP thành công, ta tiến hành tạo hệ thống SoC bằng cách sử dụng **Block Design** trong Vivado.
 
@@ -147,7 +147,5 @@ Các thành phần chính trong sơ đồ Block Design:
 - **Reset module**: đồng bộ hóa tín hiệu reset giữa phần xử lý và phần lập trình.
 
 ✅ Sau khi kết nối đầy đủ, hệ thống có thể tổng hợp (synthesis) để tạo file bitstream.
-
-📸 Sơ đồ Block Design trong Vivado:
 
 ![Hình 6 - Block Design SoC](Hinh/Hinh_6.png)
