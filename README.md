@@ -134,3 +134,20 @@ Các bước thực hiện:
 > Đây là bước cần thiết để có thể sử dụng lại IP trong các Block Design.
 
 ![Hình 5 - Giao diện đóng gói IP](Hinh/Hinh_5.png)
+
+## 🧱 Bước 4: Tạo Block Design cho hệ thống SoC trên Vivado
+
+Sau khi đóng gói IP thành công, ta tiến hành tạo hệ thống SoC bằng cách sử dụng **Block Design** trong Vivado.
+
+Các thành phần chính trong sơ đồ Block Design:
+
+- **ZYNQ MPSoC**: bộ xử lý chính điều khiển hệ thống, cấu hình chân và kết nối AXI.
+- **IP tự thiết kế (MY_IP_v1_0)**: chứa hàm MAC `Y = A * X + B`, được kết nối thông qua chuẩn **AXI4-Lite**.
+- **AXI SmartConnect**: cầu nối giữa các master/slave sử dụng giao thức AXI.
+- **Reset module**: đồng bộ hóa tín hiệu reset giữa phần xử lý và phần lập trình.
+
+✅ Sau khi kết nối đầy đủ, hệ thống có thể tổng hợp (synthesis) để tạo file bitstream.
+
+📸 Sơ đồ Block Design trong Vivado:
+
+![Hình 6 - Block Design SoC](Hinh/Hinh_6.png)
