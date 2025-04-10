@@ -48,4 +48,46 @@ Bài học được thiết kế cho những người mới bắt đầu với p
  
 [![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
 
+---
+
+## 💻 Thiết bị cần thiết
+
+Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị để thực hành Level 0 trên bo mạch **Kria KV260 FPGA**.
+
+🖼️ ![Thiết bị cần thiết](Hinh/Hinh_1.png)
+
+### 📦 Danh sách thiết bị:
+
+- **Kria KV260 FPGA**  
+  → Bo mạch chính dùng để triển khai hệ thống SoC và chạy ứng dụng nhúng.
+
+- **Dây cáp mạng (LAN)**  
+  → Dùng để kết nối FPGA với Internet thông qua router/switch, hỗ trợ cập nhật và debug qua SSH.
+
+- **Dây JTAG**  
+  → Kết nối từ FPGA đến Server PC để nạp bitstream, debug hoặc lập trình flash.
+
+- **Thẻ nhớ MicroSD và đầu đọc thẻ**  
+  → Dùng để tạo image khởi động (BOOT.BIN + Linux kernel + rootfs) và cài hệ điều hành cho FPGA.
+
+- **Server PC (Linux)**  
+  → Cài đặt công cụ thiết kế phần cứng (Vivado), công cụ PetaLinux, và thực hiện build toàn bộ hệ thống.
+
+- **Laptop/PC cá nhân (Windows hoặc Linux)**  
+  → Dùng để kết nối SSH đến Server, hoặc truyền file (WinSCP).  
+  → Nếu dùng Windows, cần cài **VMware** để chạy Linux.
+
+📌 **Lưu ý:**  
+Bạn có thể thay thế **Server PC và Laptop** cho nhau, miễn là máy đủ mạnh và có thể cài đặt Vivado + PetaLinux.
+
+
+## 🔍 Chi tiết từng bước trong quy trình thiết kế
+
+### 🧩 Bước 1: Xác định yêu cầu và đặc tả hệ thống (vẽ sơ đồ khối)
+
+- Xác định chức năng chính cần hiện thực: `Y = A * X + B`
+- Vẽ sơ đồ khối mô tả dòng dữ liệu và tín hiệu điều khiển: `A_in`, `X_in`, `B_in`, `Y_out`, `Valid_out`, `Start_in`, `Done_in`
+- Xác định định dạng số: sử dụng chuẩn **fixed-point Q15.16**
+
+🖼️ *Hình minh họa sơ đồ khối:*  
 
