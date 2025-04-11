@@ -188,8 +188,18 @@ Sau khi hoàn tất sơ đồ kết nối:
 
 ### F. Bước 6: Thiết lập môi trường PetaLinux và tạo driver
 
-Đang soạn nội dung.....
+Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Vivado, bước tiếp theo là **xuất file phần cứng (`.xsa`)** để sử dụng trong PetaLinux nhằm tạo hệ điều hành và driver phù hợp cho hệ thống.
 
+---
+
+#### 1. Xuất file phần cứng (`.xsa`) từ Vivado
+
+- Trong Vivado, sau khi **Generate Bitstream** thành công:
+  - Vào menu: **File → Export → Export Hardware**
+  - Chọn:Include bitstream
+  - File `.xsa` sẽ được tạo ra (ví dụ: `SoC_wrapper.xsa`)
+
+---
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
 Đang soạn nội dung.....
