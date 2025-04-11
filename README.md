@@ -40,24 +40,17 @@ Dưới đây là danh sách các thiết bị phần cứng cần chuẩn bị 
 
 ![Thiết bị cần thiết](Hinh/Hinh_1.png)
 
-- **Kria KV260 FPGA**  
-  → Bo mạch chính dùng để triển khai hệ thống SoC và chạy ứng dụng nhúng.
+- **Kria KV260 FPGA**: Bo mạch chính dùng để triển khai hệ thống SoC và chạy ứng dụng nhúng.
 
-- **Dây cáp mạng (LAN)**  
-  → Dùng để kết nối FPGA với Internet thông qua router/switch, hỗ trợ cập nhật và debug qua SSH.
+- **Dây cáp mạng (LAN)**: Dùng để kết nối FPGA với Internet thông qua router/switch, hỗ trợ cập nhật và debug qua SSH.
 
-- **Dây JTAG**  
-  → Kết nối từ FPGA đến Server PC để nạp bitstream, debug hoặc hoạt động như dây UART để hiện thị console của Linux trên FPGA.
+- **Dây JTAG**: Kết nối từ FPGA đến Server PC để nạp bitstream, debug hoặc hoạt động như dây UART để hiện thị console của Linux trên FPGA.
 
-- **Thẻ nhớ MicroSD và đầu đọc thẻ**  
-  → Dùng để tạo image khởi động (BOOT.BIN + Linux kernel + rootfs) và cài hệ điều hành cho FPGA.
+- **Thẻ nhớ MicroSD và đầu đọc thẻ**: Dùng để tạo image khởi động (BOOT.BIN + Linux kernel + rootfs) và cài hệ điều hành cho FPGA.
 
-- **Server PC (Linux)**  
-  → Cài đặt công cụ thiết kế phần cứng (Vivado), công cụ PetaLinux, và thực hiện build toàn bộ hệ thống.
+- **Server PC (Linux)**: Cài đặt công cụ thiết kế phần cứng (Vivado), công cụ PetaLinux, và thực hiện build toàn bộ hệ thống.
 
-- **Laptop/PC cá nhân (Windows hoặc Linux)**  
-  → Dùng để kết nối SSH đến Server, hoặc truyền file (WinSCP).  
-  → Nếu dùng Windows, cần cài **VMware** để chạy Linux.
+- **Laptop/PC cá nhân (Windows hoặc Linux)**: Dùng để kết nối SSH đến Server, hoặc truyền file (WinSCP). Nếu dùng Windows, cần cài **VMware** để chạy Linux.
 
 ⚠️ **Lưu ý:** Bạn có thể thay thế **1 Server PC và 1 Laptop/PC** thành **1 Laptop/PC duy nhất**, miễn là máy có cài đặt Linux để cài PetaLinux.
 
