@@ -220,10 +220,9 @@ chmod +x petalinux-v2022.2-*.run
 
 #####  Chạy trình cài đặt
 
-<pre>
 ```bash
 ./petalinux-v2022.2-*.run
-</pre>	
+```
 
 - Trong quá trình cài đặt, trình cài đặt sẽ hiển thị các thỏa thuận bản quyền:
 	- Dùng PgUp / PgDn để đọc
