@@ -226,7 +226,7 @@ chmod +x petalinux-v2022.2-*.run
 ./petalinux-v2022.2-*.run
 </pre>	
 
-Trong quá trình cài đặt, trình cài đặt sẽ hiển thị các thỏa thuận bản quyền:
+- Trong quá trình cài đặt, trình cài đặt sẽ hiển thị các thỏa thuận bản quyền:
 	- Dùng PgUp / PgDn để đọc
 	- Nhấn q để thoát khỏi phần hiển thị
 	- Nhấn y để đồng ý và tiếp tục
