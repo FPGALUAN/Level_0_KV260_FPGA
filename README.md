@@ -117,7 +117,7 @@ Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
   - `Simulation/`
 
 <p align="center">
-  <img src="Hinh/Hinh_4.png" alt="Mô phỏng trên Vivado" width="500"/>
+  <img src="Hinh/Hinh_4.png" alt="Mô phỏng trên Vivado" width="700"/>
 </p>
 
 ### C. Bước 3: Đóng gói IP (Package IP) trong Vivado
