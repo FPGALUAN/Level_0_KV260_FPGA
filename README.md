@@ -139,7 +139,7 @@ Các bước thực hiện:
    - Phiên bản (ví dụ: `1.0`)
    - Mô tả chức năng (Multiply-Accumulate core with FSM control)
 4. Cấu hình các cổng tín hiệu I/O và địa chỉ giao tiếp:
-   - Mapping tín hiệu qua chuẩn **AXI4-Lite** nếu dùng giao tiếp với CPU
+   - Mapping tín hiệu qua chuẩn **AXI4-Full** nếu dùng giao tiếp với CPU
 5. Kiểm tra lại toàn bộ cấu hình
 6. Nhấn **Package IP** để đóng gói và thêm IP này vào Vivado IP Catalog
 
@@ -165,7 +165,13 @@ Các thành phần chính trong sơ đồ Block Design:
 3. Dùng **Run Block Automation** để tự động cấu hình ZYNQ.
 4. Kết nối các cổng AXI và Reset đúng cách.
 
-✅ Sau khi hoàn tất sơ đồ kết nối:
+<p align="center">
+  <img src="Hinh/Hinh_6.png" alt="Block Design SoC" width="750"/>
+</p>
+
+### E. Bước 5: Tổng hợp (Synthesis), Place & Route, và tạo file Bitstream
+
+Sau khi hoàn tất sơ đồ kết nối:
 
 5. **Chuột phải vào Block Design** → chọn **"Generate Output Products"**.
 6. **Chuột phải lần nữa** → chọn **"Create HDL Wrapper"** để sinh mã top-level cho thiết kế.
@@ -176,13 +182,6 @@ Các thành phần chính trong sơ đồ Block Design:
 
 > 🧠 Đây là bước quan trọng để chuyển thiết kế thành file cấu hình `.bit` có thể nạp lên FPGA và file `.xsa` để cài đặt Petalinux cho FPGA.
 
-<p align="center">
-  <img src="Hinh/Hinh_6.png" alt="Block Design SoC" width="750"/>
-</p>
-
-### E. Bước 5: Tổng hợp (Synthesis), Place & Route, và tạo file Bitstream
-
-Đang soạn nội dung.....
 
 ### F. Bước 6: Thiết lập môi trường PetaLinux và tạo driver
 
