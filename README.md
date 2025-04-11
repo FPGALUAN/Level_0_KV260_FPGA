@@ -6,7 +6,7 @@ Repository này chứa toàn bộ tài liệu, mã nguồn và hướng dẫn li
 ---
 # Video hướng dẫn chi tiết
 
-Mỗi bước trên sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video bên dưới để xem chi tiết từng bước 👇👇👇.  
+Các bước sẽ được trình bày chi tiết trong video hướng dẫn tương ứng bên dưới, vui lòng bấm vào video bên dưới để xem chi tiết từng bước 👇👇👇.  
  
 [![Xem video demo](https://img.youtube.com/vi/F1vxzkd7_DI/0.jpg)](https://www.youtube.com/watch?v=F1vxzkd7_DI)
 
