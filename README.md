@@ -205,10 +205,12 @@ Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Viva
 
 ##### 📦 Cài đặt các gói phụ thuộc (Ubuntu/Debian)
 
-``bash
+<pre>
+```bash
 sudo apt-get install tofrodos gawk xvfb git libncurses5-dev tftpd zlib1g-dev zlib1g-dev:i386 \
 libssl-dev flex bison chrpath socat autoconf libtool texinfo gcc-multilib \
 libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tools
+</pre>
 	
 	
 	
