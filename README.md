@@ -103,17 +103,17 @@ Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
 ### B. Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
 
 - Viết mã **Verilog HDL** mô tả mạch số thực hiện phép tính **Y = A × X + B** với chuẩn **fixed-point Q15.16** cho các toán hạng.
-- ✅ **Mã nguồn RTL Verilog** được đặt trong thư mục:  
+- **Mã nguồn RTL Verilog** được đặt trong thư mục:  
   - `RTL/MAC.v`
   
 - Viết **testbench** để mô phỏng **10 test case** với các giá trị thực (real), kiểm tra đầu ra `Y_out` có khớp với giá trị mong đợi. Chạy mô phỏng bằng **Vivado Simulator**, quan sát:
   - Dạng sóng tín hiệu trên waveform
   - Kết quả tính toán in ra cửa sổ console (PASS/FAIL từng test case)
 
-- ✅ **Mã nguồn testbench** được đặt trong thư mục:  
+- **Mã nguồn testbench** được đặt trong thư mục:  
   - `TB/TB_MAC.v`
 
-- ✅ **Project Vivado (2022.2)** đã cấu hình sẵn cho mô phỏng nằm trong thư mục:  
+- **Project Vivado (2022.2)** đã cấu hình sẵn cho mô phỏng nằm trong thư mục:  
   - `Simulation/`
 
 <p align="center">
@@ -203,7 +203,7 @@ Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Viva
     🔗 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/archive.html
 
 
-##### a) Cài đặt các gói phụ thuộc (Ubuntu/Debian)
+##### Cài đặt các gói phụ thuộc (Ubuntu/Debian)
 
 <pre>
 ```bash
@@ -212,12 +212,25 @@ libssl-dev flex bison chrpath socat autoconf libtool texinfo gcc-multilib \
 libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tools
 </pre>
 	
-##### b) Cấp quyền thực thi cho file `.run`
+##### Cấp quyền thực thi cho file `.run`
 
-</pre>
+<pre>
 ```bash
 chmod +x petalinux-v2022.2-*.run	
 </pre>	
+
+#####  Chạy trình cài đặt
+
+<pre>
+```bash
+./petalinux-v2022.2-*.run
+</pre>	
+
+Trong quá trình cài đặt, trình cài đặt sẽ hiển thị các thỏa thuận bản quyền:
+	- Dùng PgUp / PgDn để đọc
+	- Nhấn q để thoát khỏi phần hiển thị
+	- Nhấn y để đồng ý và tiếp tục
+
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
 Đang soạn nội dung.....
