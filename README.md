@@ -205,12 +205,11 @@ Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Viva
 
 ##### Cài đặt các gói phụ thuộc (Ubuntu/Debian)
 
-<pre>
 ```bash
 sudo apt-get install tofrodos gawk xvfb git libncurses5-dev tftpd zlib1g-dev zlib1g-dev:i386 \
 libssl-dev flex bison chrpath socat autoconf libtool texinfo gcc-multilib \
 libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tools
-</pre>
+```
 	
 ##### Cấp quyền thực thi cho file `.run`
 
@@ -229,6 +228,72 @@ chmod +x petalinux-v2022.2-*.run
 	- Nhấn q để thoát khỏi phần hiển thị
 	- Nhấn y để đồng ý và tiếp tục
 
+#### 3. Xây dựng môi trường phần cứng
+
+##### Thiết lập môi trường làm việc Petalinux
+
+##### **Source** đến thư mục cài đặt Petalinux để sử dụng được các lệnh `petalinux-*`:
+```bash
+source <đường_dẫn_cài_petalinux>/2022.2/settings.sh
+```
+
+##### Tải bộ cài BSP cho KV260 FPGA từ trang chính thức Xilinx:
+    🔗 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/archive.html
+
+##### Tạo project PetaLinux từ BSP
+```bash	
+petalinux-create -t project -s <đường_dẫn_tới_file_BSP>.bsp --name KV260_Linux
+cd KV260_Linux
+ ```
+ 
+##### Import phần cứng (.xsa) vào project Sau khi bạn export file .xsa từ Vivado (có chứa bitstream), hãy dùng lệnh sau để tích hợp phần cứng vào project:
+```bash
+petalinux-config --get-hw-description=<path_to_the_hw_description_file> 
+ ```
+##### Cấu hình kernel bootargs thủ công Sau khi chạy petalinux-config, hệ thống sẽ mở giao diện curses để bạn cấu hình sâu hơn. Điều chỉnh cấu hình kernel bootargs Trong cửa sổ cấu hình, thực hiện các bước sau:
+ 
+ ```text
+Subsystem AUTO Hardware Settings  --->
+    DTG Settings  --->
+        Kernel Bootargs  --->
+            [ ] generate boot args automatically
+            (user-defined) user set kernel bootargs
+ ```
+ 
+Dán đoạn bootargs dưới đây vào phần user set kernel bootargs:
+```bash
+earlycon console=ttyPS1,115200 root=/dev/mmcblk1p2 rw rootwait cpuidle.off=1 uio_pdrv_genirq.of_id=generic-uio clk_ignore_unused init_fatal_sh=1 cma=256M
+ ```
+📌 Cấu hình này giúp khởi động đúng thiết bị, bật driver UIO, cấp vùng bộ nhớ CMA, và giữ clock cho các IP tự thiết kế trong PL.
+
+##### Chỉnh sửa Device Tree (system-user.dtsi)
+
+Để hệ điều hành Linux có thể sử dụng **IP tự thiết kế trong PL** thông qua driver `uio`, bạn cần chỉnh sửa file **Device Tree Overlay**.
+Trong file ở đường dẫn `KV260_Linux/project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi`, chỉnh lại file thành: 
+```dts
+/include/ "system-conf.dtsi"
+/ {
+    amba_pl@0 {
+        MY_IP@a0000000 {
+            compatible = "generic-uio";
+        };
+    };
+};
+```
+
+#### 📄 File cần chỉnh sửa: 
+ ## **Configure subsystem level configuration**
+
+### Config info
+
+- Config **subsystem level configuration by following the instructions below**
+    
+    > `DTG Settings  --->   
+      Kernel Bootargs  --->
+        [ ] generate boot args automatically
+        user set kernel bootargs`
+    >earlycon console=ttyPS1,115200 root=/dev/mmcblk1p2 rw rootwait cpuidle.off=1 uio_pdrv_genirq.of_id=generic-uio clk_ignore_unused init_fatal_sh=1 cma=256M
+	
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
 Đang soạn nội dung.....
