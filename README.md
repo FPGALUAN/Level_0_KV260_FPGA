@@ -169,14 +169,14 @@ Các thành phần chính trong sơ đồ Block Design:
 
 Sau khi hoàn tất sơ đồ kết nối:
 
-5. **Chuột phải vào Block Design** → chọn **"Generate Output Products"**.
-6. **Chuột phải lần nữa** → chọn **"Create HDL Wrapper"** để sinh mã top-level cho thiết kế.
-7. Cuối cùng, nhấn **"Generate Bitstream"** để chạy toàn bộ các bước:
+1. **Chuột phải vào Block Design** → chọn **"Generate Output Products"**.
+2. **Chuột phải lần nữa** → chọn **"Create HDL Wrapper"** để sinh mã top-level cho thiết kế.
+3. Cuối cùng, nhấn **"Generate Bitstream"** để chạy toàn bộ các bước:
    - Synthesis (tổng hợp)
    - Implementation (triển khai)
    - Bitstream Generation (tạo file cấu hình FPGA)
 
-> 🧠 Đây là bước quan trọng để chuyển thiết kế thành file cấu hình `.bit` có thể nạp lên FPGA và file `.xsa` để cài đặt Petalinux cho FPGA.
+> Đây là bước quan trọng để chuyển thiết kế thành file cấu hình `.bit` có thể nạp lên FPGA và file `.xsa` để cài đặt Petalinux cho FPGA.
 
 
 ### F. Bước 6: Thiết lập môi trường PetaLinux và tạo driver
