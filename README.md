@@ -280,8 +280,7 @@ Trong file ở đường dẫn `KV260_Linux/project-spec/meta-user/recipes-bsp/d
     };
 };
 ```
-
-#### 📄 File cần chỉnh sửa: 
+File `system-user.dtsi` mẫu được lưu trong thư mục `KV260_Linux` ở github.
  ## **Configure subsystem level configuration**
 
 ### Config info
