@@ -102,12 +102,33 @@ Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
 
 ### B. Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
 
-- Viết mã Verilog mô tả mạch số thực hiện phép tính `Y = A × X + B` với chuẩn **fixed-point Q15.16**.
-- Thiết kế bao gồm mạch tổ hợp (nhân, cộng) và điều khiển bởi **FSM** có 3 trạng thái: `IDLE`, `EXECUTE`, `WAIT_DONE`.
-- Viết testbench mô phỏng 10 test case với các giá trị thực và kiểm tra đầu ra `Y_out`.
-- Chạy mô phỏng bằng **Vivado Simulator**, quan sát tín hiệu trên waveform và kết quả kiểm tra được in ở cửa sổ console.
+- Viết mã **Verilog HDL** mô tả mạch số thực hiện phép tính:  
+  \[
+  Y = A \times X + B
+  \]
+  với chuẩn **fixed-point Q15.16** cho các toán hạng.
 
-![Mô phỏng trên Vivado](Hinh/Hinh_4.png)
+- Thiết kế bao gồm:
+  - Mạch tổ hợp: khối nhân và khối cộng
+  - **FSM (Finite State Machine)** điều khiển với 3 trạng thái:  
+    `IDLE → EXECUTE → WAIT_DONE`
+
+- Viết **testbench** để mô phỏng **10 test case** với các giá trị thực (real), kiểm tra đầu ra `Y_out` có khớp với giá trị mong đợi.
+
+- Chạy mô phỏng bằng **Vivado Simulator**, quan sát:
+  - Dạng sóng tín hiệu trên waveform
+  - Kết quả tính toán in ra cửa sổ console (PASS/FAIL từng test case)
+
+- ✅ **Mã nguồn RTL Verilog** và **testbench** được đặt trong thư mục:  
+  - `RTL/` — chứa mã thiết kế phần cứng  
+  - `TB/` — chứa testbench và hàm hỗ trợ mô phỏng
+
+- ✅ **Project Vivado (2022.2)** đã cấu hình sẵn cho mô phỏng nằm trong thư mục:  
+  - `Simulation/`
+
+<p align="center">
+  <img src="Hinh/Hinh_4.png" alt="Mô phỏng trên Vivado" width="500"/>
+</p>
 
 ### C. Bước 3: Đóng gói IP (Package IP) trong Vivado
 
