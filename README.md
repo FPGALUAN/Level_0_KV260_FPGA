@@ -122,12 +122,22 @@ Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
 
 ### C. Bước 3: Đóng gói IP (Package IP) trong Vivado
 
-Sau khi mô tả phần cứng bằng Verilog HDL và mô phỏng thành công, chúng ta tiến hành **đóng gói thiết kế thành một IP** để có thể tích hợp vào hệ thống SoC sau này.
+Sau khi mô tả phần cứng bằng **Verilog HDL** và mô phỏng thành công, chúng ta tiến hành **đóng gói thiết kế thành một IP** để có thể tái sử dụng và tích hợp vào hệ thống SoC trong các bước tiếp theo.
+
+Hình dưới minh họa cách **IP tự thiết kế (`MY_IP`)** được tích hợp vào hệ thống SoC và kết nối với CPU thông qua **AXI4 Bus**.
+
+- Tín hiệu đầu vào/ra của mạch (`A_in`, `X_in`, `B_in`, `Start_in`, `Done_in`) được ánh xạ qua giao diện AXI4-Lite thông qua lớp `AXI4 Mapping`.
+- IP thực hiện phép tính `Y = A × X + B`, điều khiển bởi FSM gồm các trạng thái `IDLE`, `EXECUTE`, `WAIT_DONE`.
+- Kết quả được ghi ra thanh ghi `Y_out`, cùng với tín hiệu hợp lệ `Valid_out` để CPU đọc lại.
+
+<p align="center">
+  <img src="Hinh/Hinh_MY_IP.png" alt="Sơ đồ tích hợp MY_IP vào hệ thống SoC" width="750"/>
+</p>
 
 Các bước thực hiện:
 
-- Mở Vivado và chọn chức năng **Package IP**
-- Điền thông tin định danh cho IP như tên, phiên bản, mô tả
+- Ở Vivado, chọn menu **Tools → Create and Package New IP**
+- Chọn kiểu IP: từ mã RTL có sẵn (`Package your current project`)
 - Cấu hình các cổng I/O, địa chỉ, giao tiếp AXI nếu có
 - Xác nhận và đóng gói IP bằng cách nhấn **Package IP**
 
