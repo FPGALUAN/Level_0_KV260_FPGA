@@ -290,13 +290,13 @@ petalinux-build
 
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
-#### Sau khi build project thành công, gõ lệnh này để đóng gói file khởi động BOOT.BIN cùng với U-Boot phù hợp cho hệ thống.
+Sau khi build project thành công, gõ lệnh này để đóng gói file khởi động BOOT.BIN cùng với U-Boot phù hợp cho hệ thống.
 
 ```bash
 petalinux-package --boot --force --u-boot
 ```
 
-#### Sau đó cắm SD card vào PC, tiến hàn phân vùng và định dạng thẻ nhớ SD. **Bạn có thể làm theo hướng dẫn chi tiết trong Video hướng dẫn bên trên ** từ phút **53:40 đến 1:03:18** tại link bên dưới:
+Sau đó cắm SD card vào PC, tiến hàn phân vùng và định dạng thẻ nhớ SD. **Bạn có thể làm theo hướng dẫn chi tiết trong Video hướng dẫn bên trên ** từ phút **53:40 đến 1:03:18** tại link bên dưới:
 
 📥 [Tải file Debian rootfs tại đây](https://drive.google.com/file/d/1ZcJYuVHpn8ER11nLCjwCUjfc5ykqP0tM/view?usp=sharing)
 
@@ -304,11 +304,24 @@ petalinux-package --boot --force --u-boot
 
 ### H. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
 
-Đang soạn nội dung.....
 
+Sau khi đã chuẩn bị đầy đủ hệ điều hành Linux trên FPGA, chúng ta tiến hành chạy chương trình nhúng điều khiển IP tự thiết kế bằng ngôn ngữ **C/C++**.
+
+#### Thư mục code
+Trong repo GitHub này, thư mục `Embedded_C_Code` chứa toàn bộ mã nguồn C điều khiển IP MAC thông qua giao tiếp PIO.
+
+#### Cách chạy
+
+1. Mở phần mềm **WinSCP** để kết nối từ máy tính cá nhân đến board **KV260 FPGA** (qua SSH).
+2. **Copy toàn bộ thư mục `Embedded_C_Code`** từ repo này vào thư mục `/home/debian/` trên KV260.
+3. Trên terminal (hoặc qua MobaXterm), truy cập vào thư mục đã copy:
+   ```bash
+   cd ~/Embedded_C_Code
+   sh run.sh
+   ```
 ---
 
-# 📬 Mọi góp ý hoặc liên hệ:
+# 📬 Mọi góp ý hoặc liên hệ để giải đáp lỗi khi thực hiện project này vui lòng liên hệ:
 
 - Facebook: [https://www.facebook.com/pham.luan.921/](https://www.facebook.com/pham.luan.921/)
 - Email: [luanph@uit.edu.vn](mailto:luanph@uit.edu.vn)
