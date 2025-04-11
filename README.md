@@ -214,10 +214,8 @@ libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tool
 	
 ##### Cấp quyền thực thi cho file `.run`
 
-<pre>
 ```bash
-chmod +x petalinux-v2022.2-*.run	
-</pre>	
+chmod +x petalinux-v2022.2-*.run
 
 #####  Chạy trình cài đặt
 
