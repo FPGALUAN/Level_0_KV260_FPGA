@@ -104,14 +104,14 @@ Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
 
 - Viết mã **Verilog HDL** mô tả mạch số thực hiện phép tính **Y = A × X + B** với chuẩn **fixed-point Q15.16** cho các toán hạng.
 - ✅ **Mã nguồn RTL Verilog** được đặt trong thư mục:  
-  - `RTL/`
+  - `RTL/MAC.v`
   
 - Viết **testbench** để mô phỏng **10 test case** với các giá trị thực (real), kiểm tra đầu ra `Y_out` có khớp với giá trị mong đợi. Chạy mô phỏng bằng **Vivado Simulator**, quan sát:
   - Dạng sóng tín hiệu trên waveform
   - Kết quả tính toán in ra cửa sổ console (PASS/FAIL từng test case)
 
 - ✅ **Mã nguồn testbench** được đặt trong thư mục:  
-  - `TB/`
+  - `TB/TB_MAC.v`
 
 - ✅ **Project Vivado (2022.2)** đã cấu hình sẵn cho mô phỏng nằm trong thư mục:  
   - `Simulation/`
