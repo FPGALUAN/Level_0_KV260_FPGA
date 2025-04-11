@@ -102,26 +102,16 @@ Kế tiếp tôi sẽ trình bày chi tiết 8 bước trên.
 
 ### B. Bước 2: Mô tả thiết kế phần cứng và mô phỏng chức năng
 
-- Viết mã **Verilog HDL** mô tả mạch số thực hiện phép tính:  
-  \[
-  Y = A \times X + B
-  \]
-  với chuẩn **fixed-point Q15.16** cho các toán hạng.
-
-- Thiết kế bao gồm:
-  - Mạch tổ hợp: khối nhân và khối cộng
-  - **FSM (Finite State Machine)** điều khiển với 3 trạng thái:  
-    `IDLE → EXECUTE → WAIT_DONE`
-
-- Viết **testbench** để mô phỏng **10 test case** với các giá trị thực (real), kiểm tra đầu ra `Y_out` có khớp với giá trị mong đợi.
-
-- Chạy mô phỏng bằng **Vivado Simulator**, quan sát:
+- Viết mã **Verilog HDL** mô tả mạch số thực hiện phép tính **Y = A × X + B** với chuẩn **fixed-point Q15.16** cho các toán hạng.
+- ✅ **Mã nguồn RTL Verilog** được đặt trong thư mục:  
+  - `RTL/`
+  
+- Viết **testbench** để mô phỏng **10 test case** với các giá trị thực (real), kiểm tra đầu ra `Y_out` có khớp với giá trị mong đợi. Chạy mô phỏng bằng **Vivado Simulator**, quan sát:
   - Dạng sóng tín hiệu trên waveform
   - Kết quả tính toán in ra cửa sổ console (PASS/FAIL từng test case)
 
-- ✅ **Mã nguồn RTL Verilog** và **testbench** được đặt trong thư mục:  
-  - `RTL/` — chứa mã thiết kế phần cứng  
-  - `TB/` — chứa testbench và hàm hỗ trợ mô phỏng
+- ✅ **Mã nguồn testbench** được đặt trong thư mục:  
+  - `TB/`
 
 - ✅ **Project Vivado (2022.2)** đã cấu hình sẵn cho mô phỏng nằm trong thư mục:  
   - `Simulation/`
