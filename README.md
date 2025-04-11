@@ -190,8 +190,6 @@ Sau khi hoàn tất sơ đồ kết nối:
 
 Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Vivado, bước tiếp theo là **xuất file phần cứng (`.xsa`)** để sử dụng trong PetaLinux nhằm tạo hệ điều hành và driver phù hợp cho hệ thống.
 
----
-
 #### 1. Xuất file phần cứng (`.xsa`) từ Vivado
 
 - Trong Vivado, sau khi **Generate Bitstream** thành công:
@@ -199,7 +197,21 @@ Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Viva
   - Chọn:Include bitstream
   - File `.xsa` sẽ được tạo ra (ví dụ: `SoC_wrapper.xsa`)
 
----
+#### 2. Cài đặt PetaLinux
+
+- Tải bộ cài **PetaLinux 2022.2** từ trang chính thức Xilinx:
+    🔗 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/archive.html
+
+
+##### 📦 Cài đặt các gói phụ thuộc (Ubuntu/Debian)
+
+``bash
+sudo apt-get install tofrodos gawk xvfb git libncurses5-dev tftpd zlib1g-dev zlib1g-dev:i386 \
+libssl-dev flex bison chrpath socat autoconf libtool texinfo gcc-multilib \
+libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tools
+	
+	
+	
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
 Đang soạn nội dung.....
