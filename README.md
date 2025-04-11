@@ -158,9 +158,27 @@ Các thành phần chính trong sơ đồ Block Design:
 - **AXI SmartConnect**: cầu nối giữa các master/slave sử dụng giao thức AXI.
 - **Reset module**: đồng bộ hóa tín hiệu reset giữa phần xử lý và phần lập trình.
 
-✅ Sau khi kết nối đầy đủ, hệ thống có thể tổng hợp (synthesis) để tạo file bitstream.
+#### Các thao tác cần thực hiện trong Vivado:
 
-![Hình 6 - Block Design SoC](Hinh/Hinh_6.png)
+1. Tạo **Block Design mới** từ menu **IP Integrator**.
+2. Thêm các thành phần chính vào sơ đồ (ZYNQ MPSoC, MY_IP_v1_0, AXI SmartConnect, Reset).
+3. Dùng **Run Block Automation** để tự động cấu hình ZYNQ.
+4. Kết nối các cổng AXI và Reset đúng cách.
+
+✅ Sau khi hoàn tất sơ đồ kết nối:
+
+5. **Chuột phải vào Block Design** → chọn **"Generate Output Products"**.
+6. **Chuột phải lần nữa** → chọn **"Create HDL Wrapper"** để sinh mã top-level cho thiết kế.
+7. Cuối cùng, nhấn **"Generate Bitstream"** để chạy toàn bộ các bước:
+   - Synthesis (tổng hợp)
+   - Implementation (triển khai)
+   - Bitstream Generation (tạo file cấu hình FPGA)
+
+> 🧠 Đây là bước quan trọng để chuyển thiết kế thành file cấu hình `.bit` có thể nạp lên FPGA và file `.xsa` để cài đặt Petalinux cho FPGA.
+
+<p align="center">
+  <img src="Hinh/Hinh_6.png" alt="Block Design SoC" width="750"/>
+</p>
 
 ### E. Bước 5: Tổng hợp (Synthesis), Place & Route, và tạo file Bitstream
 
