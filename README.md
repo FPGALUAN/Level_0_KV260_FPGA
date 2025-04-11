@@ -281,21 +281,20 @@ Trong file ở đường dẫn `KV260_Linux/project-spec/meta-user/recipes-bsp/d
 };
 ```
 File `system-user.dtsi` mẫu được lưu trong thư mục `KV260_Linux` ở github.
- ## **Configure subsystem level configuration**
 
-### Config info
+##### Sau đó tiến hành build project
 
-- Config **subsystem level configuration by following the instructions below**
-    
-    > `DTG Settings  --->   
-      Kernel Bootargs  --->
-        [ ] generate boot args automatically
-        user set kernel bootargs`
-    >earlycon console=ttyPS1,115200 root=/dev/mmcblk1p2 rw rootwait cpuidle.off=1 uio_pdrv_genirq.of_id=generic-uio clk_ignore_unused init_fatal_sh=1 cma=256M
-	
+```bash
+petalinux-build
+```
+
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
-Đang soạn nội dung.....
+Sau khi build project thành công, gõ lệnh này để đóng gói file khởi động BOOT.BIN cùng với U-Boot phù hợp cho hệ thống.
+
+```bash
+petalinux-package --boot --force --u-boot
+```
 
 ### H. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
 
