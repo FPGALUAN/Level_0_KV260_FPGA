@@ -290,11 +290,17 @@ petalinux-build
 
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
-Sau khi build project thành công, gõ lệnh này để đóng gói file khởi động BOOT.BIN cùng với U-Boot phù hợp cho hệ thống.
+#### Sau khi build project thành công, gõ lệnh này để đóng gói file khởi động BOOT.BIN cùng với U-Boot phù hợp cho hệ thống.
 
 ```bash
 petalinux-package --boot --force --u-boot
 ```
+
+#### Sau đó cắm SD card vào PC, tiến hàn phân vùng và định dạng thẻ nhớ SD. **Bạn có thể làm theo hướng dẫn chi tiết trong Video hướng dẫn bên trên ** từ phút **53:40 đến 1:03:18** tại link bên dưới:
+
+📥 [Tải file Debian rootfs tại đây](https://drive.google.com/file/d/1ZcJYuVHpn8ER11nLCjwCUjfc5ykqP0tM/view?usp=sharing)
+
+> File rootfs này chứa hệ điều hành Debian đã được cấu hình sẵn cho kiến trúc ARM64, hỗ trợ giao diện XFCE và dễ dàng cài đặt thêm ứng dụng bằng `apt`.
 
 ### H. Bước 8: Phát triển phần mềm nhúng (Embedded C/ C++)
 
