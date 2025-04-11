@@ -203,14 +203,19 @@ Sau khi hoàn tất thiết kế phần cứng và tạo Block Design trong Viva
     🔗 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/archive.html
 
 
-##### 📦 Cài đặt các gói phụ thuộc (Ubuntu/Debian)
+##### a) Cài đặt các gói phụ thuộc (Ubuntu/Debian)
 
+<pre>
 ```bash
 sudo apt-get install tofrodos gawk xvfb git libncurses5-dev tftpd zlib1g-dev zlib1g-dev:i386 \
 libssl-dev flex bison chrpath socat autoconf libtool texinfo gcc-multilib \
 libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tools
+</pre>
 	
-	
+#### b) Cấp quyền thực thi cho file `.run`
+
+```bash
+chmod +x petalinux-v2022.2-*.run	
 	
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
