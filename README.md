@@ -123,7 +123,7 @@ Hình dưới minh họa cách **IP tự thiết kế (`MY_IP`)** được tích
   <img src="Hinh/Hinh_MY_IP.png" alt="Sơ đồ tích hợp MY_IP vào hệ thống SoC" width="750"/>
 </p>
 
-- ✅ Tham khảo nội dung về **hệ thống bus bao gồm AXI4-Full** ở thư mục :  
+- Tham khảo nội dung về **hệ thống bus bao gồm AXI4-Full** ở thư mục :  
   - `Tai_Lieu_Tham_Khao/Hệ Thống Bus.pdf`
   
 Các bước thực hiện:
