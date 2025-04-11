@@ -212,7 +212,7 @@ libssl-dev flex bison chrpath socat autoconf libtool texinfo gcc-multilib \
 libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tools
 </pre>
 	
-#### b) Cấp quyền thực thi cho file `.run`
+##### b) Cấp quyền thực thi cho file `.run`
 
 ```bash
 chmod +x petalinux-v2022.2-*.run	
