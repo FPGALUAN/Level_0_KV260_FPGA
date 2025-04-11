@@ -214,9 +214,10 @@ libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tool
 	
 ##### b) Cấp quyền thực thi cho file `.run`
 
+</pre>
 ```bash
 chmod +x petalinux-v2022.2-*.run	
-	
+</pre>	
 ### G. Bước 7: Tạo image khởi động và rootfs cho Linux trên SoC FPGA
 
 Đang soạn nội dung.....
