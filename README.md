@@ -216,6 +216,7 @@ libsdl1.2-dev libglib2.0-dev screen pax libtinfo5 xterm build-essential net-tool
 
 ```bash
 chmod +x petalinux-v2022.2-*.run
+```
 
 #####  Chạy trình cài đặt
 
