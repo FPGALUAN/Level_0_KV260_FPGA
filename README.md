@@ -316,7 +316,8 @@ Trong repo GitHub này, thư mục `Embedded_C_Code` chứa toàn bộ mã ngu�
 2. **Copy toàn bộ thư mục `Embedded_C_Code`** từ repo này vào thư mục `/home/debian/` trên KV260.
 3. Trên terminal (hoặc qua MobaXterm), truy cập vào thư mục đã copy:
    ```bash
-   cd ~/Embedded_C_Code
+   ssh debiang@<địa chỉ IP của KV260 FPGA> (Ví dụ 192.168.1.10)
+   cd Embedded_C_Code
    sh run.sh
    ```
 ---
