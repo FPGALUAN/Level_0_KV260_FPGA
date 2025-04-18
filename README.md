@@ -1,3 +1,7 @@
+For [README english](https://github.com/FPGALUAN/Level_0_KV260_FPGA/blob/main/README-eng.md)
+
+For [README japanese](https://github.com/FPGALUAN/Level_0_KV260_FPGA/blob/main/README-jp.md)
+
 # 🎓 Thiết Kế Phần Cứng và Hệ Thống SoC trên FPGA – Level 0 (Kria KV260)
 
 Chào mừng bạn đến với **Level 0** trong series **Thiết kế phần cứng và hệ thống SoC trên FPGA**.  
