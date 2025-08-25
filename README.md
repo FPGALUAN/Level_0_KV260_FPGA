@@ -324,13 +324,13 @@ Trong repo GitHub này, thư mục `Embedded_C_Code` chứa toàn bộ mã ngu�
 - Facebook: [https://www.facebook.com/pham.luan.921/](https://www.facebook.com/pham.luan.921/)
 - Email: [luanph@uit.edu.vn](mailto:luanph@uit.edu.vn)
 
-Rất cảm ơn sự đồng hành và ủng hộ của bạn 🙏  
+Rất cảm ơn sự đồng hành và ủng hộ của bạn.
+
 **Chúc bạn học FPGA thật vui và hiệu quả!**
 
 Nếu bạn thấy nội dung mình chia sẻ **hữu ích, thực tế và có giá trị học tập hoặc nghiên cứu**, bạn có thể **ủng hộ** mình một chút để tiếp thêm động lực ra những phần tiếp theo chất lượng hơn.
 
-👉 **Lưu ý:** Nếu bạn là **sinh viên**, mình **không mong chờ sự ủng hộ tài chính** từ bạn đâu.  
-Chỉ cần bạn học tốt, hiểu bài và lan tỏa kiến thức đến những người cần là mình đã rất vui rồi! 💙
+**Donate:** Bạn đọc có thể ủng hộ lab bằng tài khoản bên dưới, mọi khoản tiền đóng góp sẽ được sử dụng để mua thiết bị và phần mềm phục vụ cộng đồng
 
 ---
 
